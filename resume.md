@@ -4,65 +4,96 @@ permalink: "/resume/"
 layout: page
 ---
 
-![Swiss Alps](https://user-images.githubusercontent.com/4943215/55412536-edbba180-5567-11e9-9c70-6d33bca3f8ed.jpg)
+Johnny Coder
+============
 
-<!-- The (first) h1 will be used as the <title> of the HTML page -->
-# Richard Hendricks
+-------------------     ----------------------------
+1 MyAddress                        email@example.com
+MyTown 1000                          @twitter_handle
+MyCountry                           1800 my-phone-nr
+-------------------     ----------------------------
 
-<!-- The unordered list immediately after the h1 will be formatted on a single
-line. It is intended to be used for contact details -->
-- <richard.hendriks@mail.com>
-- (912) 555-4321
-- [richardhendricks.example.com](http://richardhendricks.example.com)
-- San Francisco, CA
+Education
+---------
 
-<!-- The paragraph after the h1 and ul and before the first h2 is optional. It
-is intended to be used for a short summary. -->
-CEO and Software Engineer with knowledge of applied information theory,
-including optimizing lossless compression schema of both the length-limited and
-adaptive variants.
+2010-2014 (expected)
+:   **PhD, Computer Science**; Awesome University (MyTown)
 
-## Experience
+    *Thesis title: Deep Learning Approaches to the Self-Awesomeness
+     Estimation Problem*
 
-<!-- You have to wrap the "left" and "right" half of these headings in spans by
-hand -->
-### <span>CEO/President, Pied Piper</span> <span>Dec 2013 -- Dec 2014</span>
+2007-2010
+:   **BSc, Computer Science and Electrical Engineering**; University of
+    HomeTown (HomeTown)
 
-Pied Piper is a multi-platform technology based on a proprietary universal
-compression algorithm that has consistently fielded high Weisman Scores™ that
-are not merely competitive, but approach the theoretical limit of lossless
-compression.
+    *Minor: Awesomeology*
 
- - Build an algorithm for artist to detect if their music was violating
-   copyright infringement laws
- - Successfully won Techcrunch Disrupt
- - Optimized an algorithm that holds the current world record for Weisman Scores
+Experience
+----------
 
-### <span>Teacher, CoderDojo</span> <span>July 2013 -- Dec 2013</span>
+**Your Most Recent Work Experience:**
 
-Global movement of free coding clubs for young people.
+Short text containing the type of work done, results obtained,
+lessons learned and other remarks. Can also include lists and
+links:
 
- - Awarded 'Teacher of the Month'
+* First item
 
-## Projects
+* Item with [link](http://www.example.com). Links will work both in
+  the html and pdf versions.
 
-### <span>Miss Direction</span> <span>Aug 2016</span>
+**That Other Job You Had**
 
-A mapping engine that misguides you:
+Also with a short description.
 
-   - Won award at AIHacks 2016
-   - Built by all women team of newbie programmers
-   - Using modern technologies such as GoogleMaps, Chrome Extension and Javascript
+Technical Experience
+--------------------
 
-## Education
+My Cool Side Project
+:   For items which don't have a clear time ordering, a definition
+    list can be used to have named items.
 
-### <span>University of Oklahoma, BA Information Technology</span> <span>2011 -- 2014</span>
+    * These items can also contain lists, but you need to mind the
+      indentation levels in the markdown source.
+    * Second item.
 
-  - GPA 4.0
-  - DB1101 - Basic SQL
-  - CS2011 - Java Introduction
+Open Source
+:   List open source contributions here, perhaps placing emphasis on
+    the project names, for example the **Linux Kernel**, where you
+    implemented multithreading over a long weekend, or **node.js**
+    (with [link](http://nodejs.org)) which was actually totally
+    your idea...
 
-## Skills
+Programming Languages
+:   **first-lang:** Here, we have an itemization, where we only want
+    to add descriptions to the first few items, but still want to
+    mention some others together at the end. A format that works well
+    here is a description list where the first few items have their
+    first word emphasized, and the last item contains the final few
+    emphasized terms. Notice the reasonably nice page break in the pdf
+    version, which wouldn't happen if we generated the pdf via html.
 
- - Web development: HTML, CSS, JavaScript
- - Compression: Mpeg, MP4, GIF
+:   **second-lang:** Description of your experience with second-lang,
+    perhaps again including a [link] [ref], this time placing the url
+    reference elsewhere in the document to reduce clutter (see source
+    file). 
+
+:   **obscure-but-impressive-lang:** We both know this one's pushing
+    it.
+
+:   Basic knowledge of **C**, **x86 assembly**, **forth**, **Common Lisp**
+
+[ref]: https://github.com/githubuser/superlongprojectname
+
+Extra Section, Call it Whatever You Want
+----------------------------------------
+
+* Human Languages:
+
+     * English (native speaker)
+     * ???
+     * This is what a nested list looks like.
+
+* Random tidbit
+
+* Other sort of impressive-sounding thing you did
