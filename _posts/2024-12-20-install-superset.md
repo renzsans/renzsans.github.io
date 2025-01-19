@@ -1,6 +1,6 @@
 ---
 title: "Install Apache Superset"
-date: 2025-01-19
+date: 2024-12-20
 categories: [Apache Superset]
 tags: [Analytics, Visualization, Software]
 ---
@@ -52,7 +52,7 @@ You should see the venv name prefix in your CLI like below.
 ```
 (superset) PS C:\Development\Superset>
 ```
-![CLI View](/assets/img/posts/2025-01-19-install-superset/superset-activate-cli.png){: width="600"}
+![CLI View](/assets/img/posts/2024-12-20-install-superset/superset-activate-cli.png){: width="600"}
 
 > **_Remember_**: You are inside the venv, if you see your venv name prefix in your CLI.
 {: .prompt-tip }
@@ -119,8 +119,8 @@ superset run -p 8088 --with-threads --reload --debugger
 
 If everything worked, you should now have Superset running with sample data. Navigate to hostname:port in your local browser *(e.g. locally by default at localhost:8088)* and login using the username and password you created.
 
-![Login page](/assets/img/posts/2025-01-19-install-superset/superset-login-page.png){: width="600"}
+![Login page](/assets/img/posts/2024-12-20-install-superset/superset-login-page.png){: width="600"}
 
-![With examples](/assets/img/posts/2025-01-19-install-superset/superset-with-examples.png){: width="600"}
+![With examples](/assets/img/posts/2024-12-20-install-superset/superset-with-examples.png){: width="600"}
 
 You should be able to dispaly an example dashboard using sample data like above. Happy visualizing!
