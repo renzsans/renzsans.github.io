@@ -68,7 +68,7 @@ Inside your venv, install the superset package. You have venv activated if you s
 pip install apache-superset
 ```
 
-You must define a few required configurations after installation. As mentioned in the introduction, I assume you are using a Windows machine; as a result, we will need to manually change a few files to add the necessary configurations.
+After installation, you must define a few required configurations. As mentioned in the introduction, I assume you are using a Windows machine; as a result, we will need to manually change a few files to add the necessary configurations.
 
 If your venv is also called `superset`, you will notice several `activate` named files with different file types within the `\superset\Scripts` folder. After the final keyword command *(usually toward the bottom of the page)*, add the following lines to each one after opening it in a text editor. You can use any string as the secret key as long as it remains constant.
 
@@ -122,3 +122,5 @@ If everything worked, you should now have Superset running with sample data. Nav
 ![Login page](/assets/img/posts/2025-01-19-install-superset/superset-login-page.png){: width="600"}
 
 ![With examples](/assets/img/posts/2025-01-19-install-superset/superset-with-examples.png){: width="600"}
+
+You should be able to dispaly an example dashboard using sample data like above. Happy visualizing!
