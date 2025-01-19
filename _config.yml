@@ -1,4 +1,4 @@
-title: "Renz Santos"
+title: "./renzsans"
 author: "Renz Santos"
 description: "Made with <b style=\"color: #f45;\">&lt;3</b>"
 permalink: /:title/
@@ -8,17 +8,17 @@ date_format: "%B %d, %Y"
 
 # Layout
 
-show_excerpts: false        # show article excerpts on the home page
+show_excerpts: true        # show article excerpts on the home page
 show_frame: true           # adds a gray frame to the site
 show_sidebar: false        # show a sidebar instead of the usual header
-minimal: true             # use a dark header
+minimal: false             # use a dark header
 
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "index.html"}
-  - {file: "README.md"}
-  - {file: "resume.md", title: "Resume"}
+  - {file: "_pages/about.md"}
+  - {file: "_pages/resume.md", title: "Resume"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:renzsans@gmail.com"}
