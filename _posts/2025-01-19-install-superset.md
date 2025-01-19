@@ -7,27 +7,28 @@ tags: [Analytics, Visualization, Software]
 
 # Running Apache Superset as Python Virtual Environment on Windows
 
-Sometimes even if documentation is available, software installation takes a bit more work than what the documentation provides. It is not a clear-cut sequential approach in installing software. In this case, I found SuperSet installation a bit more involved especially when running on Windows as a python virtual environment. 
+Software installation can occasionally require a little more effort than what the documentation suggests, even when it is accessible. Installing software does not follow a precise, consecutive process. In this instance, I discovered that installing SuperSet was a little more involved, particularly when using Windows as a Python virtual environment.
 
-SuperSet is an open source Data Analytics and Visualization tool by Apache. Anyone can certainly use this software to display and analyze their own data with some flair. In this article, I will try to explain a bit more step-by-step SuperSet installation as a python venv on a Windows machine. Hopefully, it will help anyone understand and follow from start to finish.
+Apache SuperSet is an open source tool for data analytics and visualization. With this software, anyone can show and analyze their own data in an elegant way. In this post, I will attempt to provide a slightly more detailed explanation of how to install Superset as a Python environment on a Windows machine. It should be easy for anyone to follow and comprehend from beginning to end.
 
-Installing SuperSet as python venv can be found in its own wesite here. https://superset.apache.org/docs/installation/pypi#python-virtual-environment
+Apache Superset's own website has [instructions for installing](https://superset.apache.org/docs/installation/pypi#python-virtual-environment) it as a Python virtual machine, but let's add more information from beginning to end.
 
-However, lets add more details from a start to finish approach.
 
 ## Install Python Software
 
-For this, lets install python 3.11 on your Windows machine. Using Windows, I enjoy installing software as chocolatey packages since its much easier to manage all my software. If you already have python 3.6+, you can skip this step. 
+For this, let's install Python 3.11 on a Windows machine. I like to install applications in Windows as chocolatey packages because it makes managing all of my software much simpler. You can omit this step if you already have Python 3.6 or above. 
 
-Lets install chocolatey from this website https://chocolatey.org/install. Just copy the CLI command and run it in your powershell.
-```
+Lets install chocolatey from this [website](https://chocolatey.org/install). Just copy the CLI command and run it in your powershell.
+
+For example.
+```batch
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ```
 
 Now, install python 3.11 with this command.
-
+```batch
 choco install python --version=3.11.0
-
+```
 Your python should now be up and running.
 
 ## Create a Python Virtual Environment
@@ -67,9 +68,9 @@ Inside your venv, install the superset package. You have venv activated if you s
 pip install apache-superset
 ```
 
-Once installed, you will need to defined some mandatory configurations. I am assuming you are on a Windows machine as stated in the intro, therefore, we need to manually edit some files to include required configurations.
+You must define a few required configurations after installation. As mentioned in the introduction, I assume you are using a Windows machine; as a result, we will need to manually change a few files to add the necessary configurations.
 
-Assuming your venv is named `superset`, under the folder `\superset\Scripts` you will see multiple `activate` named files with differing file types. Open each one using a text editor and add the following lines after the last keyword command *(mostly towards the bottom of the page)*. The secret key can be any string you want but be consistent.
+If your venv is also called `superset`, you will notice several `activate` named files with different file types within the `\superset\Scripts` folder. After the final keyword command *(usually toward the bottom of the page)*, add the following lines to each one after opening it in a text editor. You can use any string as the secret key as long as it remains constant.
 
 For `activate` bash file *(this is mostly for Linux but lets update it anyway)*:
 ```
