@@ -27,7 +27,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 
 Now, install python 3.11 with this command.
 ```batch
-choco install python --version=3.11.0
+choco install -y python311
 ```
 Your python should now be up and running.
 
