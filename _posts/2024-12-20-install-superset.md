@@ -1,15 +1,13 @@
 ---
-title: "Install Apache Superset"
+title: "Install Apache Superset as Python Virtual Environment on Windows"
 date: 2024-12-20
 categories: [Apache Superset]
 tags: [Analytics, Visualization, Software]
 ---
 
-# Apache Superset as Python Virtual Environment on Windows
-
 Software installation can occasionally require a little more effort than what the documentation suggests, even when it is accessible. Installing software does not follow a precise, consecutive process. In this instance, I discovered that installing SuperSet was a little more involved, particularly when using Windows as a Python virtual environment.
 
-Apache SuperSet is an open source tool for data analytics and visualization. With this software, anyone can show and analyze their own data in an elegant way. In this post, I will attempt to provide a slightly more detailed explanation of how to install Superset as a Python environment on a Windows machine. It should be easy for anyone to follow and comprehend from beginning to end.
+Apache SuperSet is an open source tool for data analytics and visualization. With this software, anyone can show and analyze their own data in an elegant way. In this post, I will attempt to provide a slightly more detailed explanation on how to install Superset as a Python environment on a Windows machine. It should be easy for anyone to follow and comprehend from beginning to end.
 
 Apache Superset's own website has [instructions for installing](https://superset.apache.org/docs/installation/pypi#python-virtual-environment) it as a Python virtual machine, but let's add more information from beginning to end.
 
@@ -21,7 +19,7 @@ For this, let's install Python 3.11 on a Windows machine. I like to install appl
 Lets install chocolatey from this [website](https://chocolatey.org/install). Just copy the CLI command and run it in your powershell.
 
 For example.
-```batch
+```powershell
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ```
 
@@ -64,7 +62,7 @@ You should see the venv name prefix in your CLI like below.
 ## Install Apache SuperSet
 
 Inside your venv, install the superset package. You have venv activated if you see the venv name prefix in your CLI, if not see previous step.
-```
+```python
 pip install apache-superset
 ```
 
@@ -73,19 +71,19 @@ After installation, you must define a few required configurations. As mentioned 
 If your venv is also called `superset`, you will notice several `activate` named files with different file types within the `\superset\Scripts` folder. After the final keyword command *(usually toward the bottom of the page)*, add the following lines to each one after opening it in a text editor. You can use any string as the secret key as long as it remains constant.
 
 For `activate` bash file *(this is mostly for Linux but lets update it anyway)*:
-```
+```shell
 export SUPERSET_SECRET_KEY=YOUR-SECRET-KEY
 export FLASK_APP=superset
 ```
 
 For `activate.bat` batch file:
-```
+```batch
 set SUPERSET_SECRET_KEY=YOUR-SECRET-KEY
 set FLASK_APP=superset
 ```
 
 For `Activate.ps1` powershell file:
-```
+```powershell
 $Env:SUPERSET_SECRET_KEY = "YOUR-SECRET-KEY"
 $Env:FLASK_APP = "superset"
 ```
@@ -96,12 +94,12 @@ Reactivate you venv to make sure the following environment variables are set. Ru
 ## Run SuperSet with Examples
 
 Inside your venv with superset installed, initialize a sample sqlite database with command below.
-```python
+```shell
 superset db upgrade
 ```
 
 Setup database as admin.
-```python
+```shell
 # Create an admin user in your metadata database 
 # (use `admin` as username to be able to load the examples)
 superset fab create-admin

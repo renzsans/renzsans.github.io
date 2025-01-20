@@ -5,11 +5,9 @@ categories: [Leaflet]
 tags: [Visualization, Map, Software]
 ---
 
-# Leaflet with Javascript
+Mapping software have long fascinated me by how it enables and transforms our ability to navigate and engage with the world around us. Maps are incredibly helpful in a variety of ways, including information collection, navigating, and discovery. In our increasingly linked world, mapping software has emerged as a vital tool for personal safety, business operations, exploration, and navigation.
 
-The way mapping software enables and transforms our ability to navigate and engage with the world around us has always captivated me. Maps are incredibly helpful in a variety of ways, including information collection, navigating, and discovery. In our increasingly linked world, mapping software has emerged as a vital tool for personal safety, business operations, exploration, and navigation.
-
-**Leaflet** is a fantastic open-source JavaScript library for building interactive maps that are lightweight.Its many features, ease of use, and portability make it immensely popular. [Learn more about it here](https://leafletjs.com/index.html).
+**Leaflet** is a fantastic [open-source JavaScript library](https://leafletjs.com/index.html) for building interactive maps that are lightweight. Its many features, ease of use, and portability make it immensely popular.
 
 One open standard format for expressing geographic data is [GeoJSON](https://geojson.org/). It essentially uses the JSON standard to encode geographic data, such as points, lines, and polygons. Consider it a digital language for location-based data and maps.
 
