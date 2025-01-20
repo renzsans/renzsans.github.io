@@ -5,7 +5,7 @@ categories: [Apache Superset]
 tags: [Analytics, Visualization, Software]
 ---
 
-# Running Apache Superset as Python Virtual Environment on Windows
+# Apache Superset as Python Virtual Environment on Windows
 
 Software installation can occasionally require a little more effort than what the documentation suggests, even when it is accessible. Installing software does not follow a precise, consecutive process. In this instance, I discovered that installing SuperSet was a little more involved, particularly when using Windows as a Python virtual environment.
 
@@ -117,10 +117,10 @@ superset run -p 8088 --with-threads --reload --debugger
 ```
 > **_Note_**: You can remove `--debugger` to save some processing time
 
-If everything worked, you should now have Superset running with sample data. Navigate to hostname:port in your local browser *(e.g. locally by default at localhost:8088)* and login using the username and password you created.
+If everything worked, you should now have Superset running with sample data. Navigate to **_hostname:port_** in your local browser *(e.g. locally by default at localhost:8088)* and login using the username and password you created.
 
 ![Login page](/assets/img/posts/2024-12-20-install-superset/superset-login-page.png){: width="600"}
 
 ![With examples](/assets/img/posts/2024-12-20-install-superset/superset-with-examples.png){: width="600"}
 
-You should be able to dispaly an example dashboard using sample data like above. Happy visualizing!
+You should be able to display an example dashboard using sample data like above. Happy visualizing!
